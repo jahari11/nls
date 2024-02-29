@@ -7,6 +7,7 @@ import Product from "./Pages/Product";
 import Contact from './Pages/Contact'
 import Cart from './Pages/Cart'
 import { CartProvider } from "react-use-cart";
+import Preloader from "./Component/Preloader";
 
 
 function App() {
@@ -14,8 +15,10 @@ function App() {
     <div className="app">
       <CartProvider>
       <BrowserRouter>
+      <Preloader />
       <Routes>
-      <Route index element = {<Home />} />
+      <Route index element ={<Home />} />
+      <Route path="/home" element = {<Home />} />
       <Route path="/shop" element = {<Shop />} />
       <Route path = "/shop-item/:id" element = {<Product />} />
       <Route path = "/contact" element = {<Contact />} />

@@ -14,7 +14,7 @@ const Footer = () => {
         <h2>Neverland Supply © 2024</h2>
       </div>
       <div className="footer-links">
-      <ul>
+      <ul className=''>
         {footerLinks.map((item)=> (
           <li key={item.id}><Link to= {item.name}>{item.name}</Link></li>
         ))}

@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom';
 import CartIcon from './CartIcon';
 
 const Navbar = () => {
-  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
 
   const navItems = [
     { id: 1, label: 'Home', link: '/' },

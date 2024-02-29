@@ -16,7 +16,7 @@ const Cart = () => {
   } = useCart();
 
   return (
-    <>
+    <div className='cart-wrapper'>
       <Navbar />
       <div className='cart-container'>
         {isEmpty ? (
@@ -45,7 +45,7 @@ const Cart = () => {
         )}
       </div>
       <Footer />
-    </>
+    </div>
   );
 }
 
